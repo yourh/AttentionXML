@@ -1,0 +1,20 @@
+name: AttentionXML
+
+model:
+  hidden_size: 512
+  layers_num: 1
+  linear_size: [512, 256]
+  dropout: 0.5
+
+train:
+  batch_size: 200
+  nb_epoch: 10
+  swa_warmup: 2
+
+valid:
+  batch_size: 200
+
+predict:
+  batch_size: 200
+
+path: models

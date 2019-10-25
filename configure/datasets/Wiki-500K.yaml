@@ -1,0 +1,23 @@
+name: Wiki-500K
+
+train:
+  sparse: data/Wiki-500K/train.txt
+  texts: data/Wiki-500K/train_texts.npy
+  labels: data/Wiki-500K/train_labels.npy
+
+valid:
+  size: 4000
+
+test:
+  texts: data/Wiki-500K/test_texts.npy
+
+embedding:
+  emb_init: data/Wiki-500K/emb_init.npy
+
+output:
+  res: results
+
+labels_binarizer: data/Wiki-500K/labels_binarizer
+
+model:
+  emb_size: 300

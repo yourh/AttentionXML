@@ -1,0 +1,23 @@
+name: Amazon-3M
+
+train:
+  sparse: data/Amazon-3M/train_v1.txt
+  texts: data/Amazon-3M/train_texts.npy
+  labels: data/Amazon-3M/train_labels.npy
+
+valid:
+  size: 4000
+
+test:
+  texts: data/Amazon-3M/test_texts.npy
+
+embedding:
+  emb_init: data/Amazon-3M/emb_init.npy
+
+output:
+  res: results
+
+labels_binarizer: data/Amazon-3M/labels_binarizer
+
+model:
+  emb_size: 300

@@ -1,0 +1,22 @@
+name: AmazonCat-13K
+
+train:
+  texts: data/AmazonCat-13K/train_texts.npy
+  labels: data/AmazonCat-13K/train_labels.npy
+
+valid:
+  size: 4000
+
+test:
+  texts: data/AmazonCat-13K/test_texts.npy
+
+embedding:
+  emb_init: data/AmazonCat-13K/emb_init.npy
+
+output:
+  res: results
+
+labels_binarizer: data/AmazonCat-13K/labels_binarizer
+
+model:
+  emb_size: 300
